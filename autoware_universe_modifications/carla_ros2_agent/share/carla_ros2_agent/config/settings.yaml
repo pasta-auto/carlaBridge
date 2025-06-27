@@ -1,0 +1,28 @@
+carla_ros2_agent:
+  ros__parameters:
+    autoware:
+      camera_raw_path: "/attack/sensing/camera/camera0/image_rect_color"
+      camera_info_path: "/attack/sensing/camera/camera0/camera_info"
+      lidar_path: "/attack/lidar_blind/input"
+      nav_sat_path: "/attack/gnss/input"
+      ecef_velocity_path: "/attack/gnss/input_vel"
+      nav_sat_orientation_path: "/attack/autoware_orientation"
+      imu_path: "/attack/sensing/imu/tamagawa/imu_raw"
+      steering_status_path: "/attack/vehicle/status/steering_status"
+      hazard_status_path: "/attack/vehicle/status/hazard_lights_status"
+      turn_indicators_status_path: "/attack/vehicle/status/turn_indicators_status"
+      gear_status_path: "/attack/vehicle/status/gear_status"
+      control_mode_status_path: "/attack/vehicle/status/control_mode"
+      veloticy_status_path: "/attack/vehicle/status/velocity_status"
+      actuation_status_path: "/attack/vehicle/status/actuation_status"
+      handbrake_status_path: "/attack/vehicle/status/handbrake_status"
+      headlights_status_path: "/attack/vehicle/status/headlights_status"
+      vehicle_velocity_twist_path: "/attack/sensing/vehicle_velocity_converter/twist_with_covariance"
+      clock_path: "/clock"
+
+    carla:
+      frame_rate: 20
+      actuation_cmd_path: "/control/command/actuation_cmd"
+      turn_indicators_path: "/control/command/turn_indicators_cmd"
+      hazard_lights_path: "/control/command/hazard_lights_cmd"
+      gear_cmd_path: "/control/command/gear_cmd"

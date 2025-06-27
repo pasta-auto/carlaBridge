@@ -1,0 +1,4 @@
+attack_ethernet:
+  ros__parameters:
+    status: "/attack/ethernet/status"
+    config: "/attack/ethernet/config"

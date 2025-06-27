@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="settings_yaml" default="settings.yaml"/>
+
+  <node pkg="attack_ethernet" name="attack_ethernet" exec="attack_ethernet" respawn="false"  output="log">
+    <param from="$(find-pkg-share attack_ethernet)/config/$(var settings_yaml)"/>
+  </node>
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="settings_yaml" default="settings.yaml"/>
+
+  <node pkg="attack_gnss" name="attack_gnss" exec="attack_gnss" respawn="false"  output="log">
+    <param from="$(find-pkg-share attack_gnss)/config/$(var settings_yaml)"/>
+  </node>
+</launch>

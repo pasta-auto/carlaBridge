@@ -1,0 +1,4 @@
+name: "LiDAR 0 intensity"
+description: "LiDAR set intensity of all points to 0"
+type: "LiDAR Module"
+moduleVersion: 0

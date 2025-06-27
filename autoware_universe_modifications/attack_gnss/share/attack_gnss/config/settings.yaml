@@ -1,0 +1,17 @@
+attack_gnss:
+  ros__parameters:
+    input: "/attack/gnss/input"
+    input_vel: "/attack/gnss/input_vel"
+    output: "/attack/sensing/gnss/ublox/nav_sat_fix"
+    output_vel: "/attack/sensing/gnss/ecef_twist_with_covariance"
+    status: "/attack/gnss/status"
+
+    config: "/attack/gnss/config"
+
+    height_system: 0
+    coordinate_system: 3
+    plane: 0
+
+    origin_lat: 0.0
+    origin_lon: 0.0
+    origin_alt: 0.0

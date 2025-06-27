@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="settings_yaml" default="settings.yaml"/>
+  <arg name="spawn_objects" default="$(find-pkg-share carla_ros2_agent)/config/objects.json"/>
+  <arg name="carla_ip" default="127.0.0.1"/>
+  <arg name="carla_port" default="2000"/>
+  <arg name="ego_vehicle_role_name" default="heroAW"/>
+
+  <node pkg="carla_ros2_agent" name="carla_ros2_agent" exec="carla_ros2_agent" respawn="false"  output="log">
+    <param from="$(find-pkg-share carla_ros2_agent)/config/$(var settings_yaml)"/>
+    <param name="spawn_objects" value="$(var spawn_objects)"/>
+    <param name="host" value="$(var carla_ip)"/>
+    <param name="port" value="$(var carla_port)"/>
+    <param name="ego_vehicle_role_name" value="$(var ego_vehicle_role_name)" />
+  </node>
+
+  <!--><node pkg="carla_ros2_agent" name="gnss_server" exec="pasta-interface/gnss_server" output="screen"></node><!-->
+</launch>

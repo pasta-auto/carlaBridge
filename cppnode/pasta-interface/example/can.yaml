@@ -1,0 +1,4 @@
+name: "CAN Test"
+description: "Python for can test"
+type: "CAN Module"
+moduleVersion: 0

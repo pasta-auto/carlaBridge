@@ -1,0 +1,4 @@
+name: "Print shape"
+description: "Prints shape of input array"
+type: "Test Module"
+moduleVersion: 0

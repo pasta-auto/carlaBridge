@@ -1,0 +1,4 @@
+name: "LiDAR Test"
+description: "LiDAR"
+type: "LiDAR Module"
+moduleVersion: 0

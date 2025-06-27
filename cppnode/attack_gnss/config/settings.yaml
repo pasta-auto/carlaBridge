@@ -1,0 +1,15 @@
+carla_ros2_agent:
+  ros__parameters:
+    input: "/attack/gnss/input"
+    output: "/sensing/gnss/ublox/nav_sat_fix"
+    status: "/attack/gnss/status"
+
+    config: "/attack/gnss/config"
+
+    height_system: 0
+    coordinate_system: 3
+    plane: 0
+
+    origin_lat: 0.0
+    origin_lon: 0.0
+    origin_alt: 0.0

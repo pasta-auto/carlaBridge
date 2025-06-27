@@ -1,0 +1,4 @@
+name: "0B"
+description: "Sets B colour channel to zero"
+type: "Camera Module"
+moduleVersion: 0

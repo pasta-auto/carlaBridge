@@ -1,0 +1,178 @@
+{
+    "can_format": "lf6-{id:03x} {:0{datasize}x}",
+    "serial_format": "chs-{id:03x} {:0{datasize}x}",
+    "ids": 
+    {
+        "brakeCmd" : {
+            "canId":    "0x01a",
+            "serialId": "0x00",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x11a"}]
+        },
+        "brakeRpt" : {
+            "canId":    "0x24",
+            "serialId": "0x0f",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "throttleCmd": {
+            "canId":    "0x02f",
+            "serialId": "0x01",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x12f"}]
+        },
+        "throttleRpt": {
+            "canId":    "0x39",
+            "serialId": "0x10",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "steerCmd": {
+            "canId":    "0x058",
+            "serialId": "0x02",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x158"}]
+        },
+        "steerRpt": {
+            "canId":    "0x198",
+            "serialId": "0x1c",
+            "period": 50,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "powerSteerRpt": {
+            "canId":    "0x62",
+            "serialId": "0x1c",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": [],
+            "override_can_format": "lf6-{id:03x} {:0{datasize}x}{:0{datasize}x}",
+            "totalsize": 4
+        },
+        "ShiftCmd": {
+            "canId":    "0x06d",
+            "serialId": "0x03",
+            "period": 0,
+            "datasize": 1,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x16d"}]
+        },
+        "gearRpt": {
+            "canId":    "0x77",
+            "serialId": "0x13",
+            "period": 20,
+            "datasize": 1,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "turnLightsCmd": {
+            "canId":    "0x083",
+            "serialId": "0x04",
+            "period": 20,
+            "datasize": 1,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x283"}]
+        },
+        "turnLightsRpt": {
+            "canId":    "0x8d",
+            "serialId": "0x2a",
+            "period": 0,
+            "datasize": 1,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "frontLightsCmd": {
+            "canId":    "0x1a7",
+            "serialId": "0x06",
+            "period": 50,
+            "datasize": 1,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x2a7"}]
+        },
+        "frontLightsRpt": {
+            "canId":    "0x1bb",
+            "serialId": "0x2d",
+            "period": 50,
+            "datasize": 1,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "passingCmd": {
+            "canId":    "0x1b1",
+            "serialId": "0x07",
+            "period": 0,
+            "datasize": 1,
+            "modeSend": [2],
+            "modeReceive": [1],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x3b1"}]
+        },
+        "handbrakeCmd": {
+            "canId":    "0x1c9",
+            "serialId": "0x09",
+            "period": 50,
+            "datasize": 1,
+            "modeSend": [2],
+            "modeReceive": [1,2],
+            "sendCanIdOverride": [{"mode": 6, "id":"0x2c9"}]
+        },
+        "handbrakeRpt": {
+            "canId":    "0x1d3",
+            "serialId": "0x20",
+            "period": 50,
+            "datasize": 1,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "rpmSpeedRpt": {
+            "canId":    "0x43",
+            "serialId": "0x11",
+            "period": 20,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": [],
+            "override_can_format": "lf6-{id:03x} {:0{datasize}x}{:0{datasize}x}",
+            "totalsize": 4
+        },
+        "speedRpt": {
+            "canId":    "0x16f",
+            "serialId": "0x18",
+            "period": 10,
+            "datasize": 2,
+            "modeSend": [1,2,6],
+            "modeReceive": []
+        },
+        "ignitionRpt": {
+            "canId":    "0x19a",
+            "serialId": "0x1d",
+            "period": 50,
+            "datasize": 1,
+            "modeSend": [],
+            "modeReceive": []
+        },
+        "modeChangeCmd": {
+            "period": 0,
+            "datasize": 1,
+            "modeSend": [1,2,3,4,6,8],
+            "modeReceive": [1,2,3,4,6,8],
+            "override_can_format": "mod-{}"
+        }
+    }
+}

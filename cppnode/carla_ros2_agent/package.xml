@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>carla_ros2_agent</name>
+  <version>0.0.1</version>
+  <description>Bridge control between carla and autoware</description>
+  <maintainer email="shea@fixstars.com">Shea Sanderson</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>dummy_perception_publisher</depend>
+  <depend>autoware_auto_perception_msgs</depend>
+  <depend>geographiclib</depend>
+  <depend>pasta-interface</depend>
+
+  <build_depend>nlohmann-json-dev</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>autoware_sensing_msgs</build_depend>
+  <build_depend>autoware_auto_vehicle_msgs</build_depend>
+  <build_depend>autoware_auto_control_msgs</build_depend>
+  <build_depend>autoware_adapi_v1_msgs</build_depend>
+  <build_depend>tier4_vehicle_msgs</build_depend>
+  <build_depend>tier4_external_api_msgs</build_depend>
+  <build_depend>ackermann_msgs</build_depend>
+  <build_depend>builtin_interfaces</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>fmt</build_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

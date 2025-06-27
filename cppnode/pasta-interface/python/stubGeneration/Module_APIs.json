@@ -1,0 +1,51 @@
+{
+"Test Module": {
+    "baseClass"    : "test_module",
+    "wrapperClass" : "PythonTestModuleWrapper",
+    "type"         : "module_type::Test_Module",
+    "version"      : 0,
+    "callFunction" : "run(arr)"
+},
+"Camera Module": {
+    "baseClass"    : "camera_module",
+    "wrapperClass" : "PythonCameraModuleWrapper",
+    "type"         : "module_type::Sensor_CMOS",
+    "version"      : 0,
+    "callFunction" : "run(arr)"
+},
+"GNSS Module": {
+    "baseClass"    : "gnss_module",
+    "wrapperClass" : "PythonGNSSModuleWrapper",
+    "type"         : "module_type::Sensor_GNSS",
+    "version"      : 0,
+    "callFunction" : "run(arr)"
+},
+"Radar Module": {
+    "baseClass"    : "radar_module",
+    "wrapperClass" : "PythonRadarModuleWrapper",
+    "type"         : "module_type::Sensor_Radar",
+    "version"      : 0,
+    "callFunction" : "run(arr)"
+},
+"LiDAR Module": {
+    "baseClass"    : "lidar_module",
+    "wrapperClass" : "PythonLiDARModuleWrapper",
+    "type"         : "module_type::Sensor_LiDAR",
+    "version"      : 0,
+    "callFunction" : "run(arr, header)"
+},
+"IMU Module": {
+    "baseClass"    : "imu_module",
+    "wrapperClass" : "PythonIMUModuleWrapper",
+    "type"         : "module_type::Sensor_IMU",
+    "version"      : 0,
+    "callFunction" : "run(gyr, acc, loc, rot)"
+},
+"CAN Module": {
+    "baseClass"    : "can_module",
+    "wrapperClass" : "PythonCANModuleWrapper",
+    "type"         : "module_type::CAN_Data",
+    "version"      : 0,
+    "callFunction" : "run(arr)"
+}
+}

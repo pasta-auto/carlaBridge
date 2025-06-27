@@ -1,0 +1,5 @@
+carla_ros2_agent:
+  ros__parameters:
+    input: "/attack/lidar_blind/input"
+    output: "/sensing/lidar/top/outlier_filtered/pointcloud"
+    status: "/attack/lidar_blind/status"

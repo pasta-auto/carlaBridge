@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="settings_yaml" default="settings.yaml"/>
+  <arg name="pasta_mappings" default="$(find-pkg-share pasta_agent)/config/pastaIDs.json"/>
+  <arg name="pasta_ip" default="127.0.0.1"/>
+  <arg name="pasta_port" default="3000"/>
+  <arg name="ego_vehicle_role_name" default="heroAW"/>
+
+<!-- <param from="$(find-pkg-share pasta_agent)/config/$(var settings_yaml)"/> -->
+  <node pkg="pasta_agent" name="pasta_agent" exec="pasta_agent" respawn="false"  output="log">
+    <param name="pasta_mappings" value="$(var pasta_mappings)"/>
+    <param name="host" value="$(var pasta_ip)"/>
+    <param name="port" value="$(var pasta_port)"/>
+    <param name="ego_vehicle_role_name" value="$(var carla_role_name)" />
+  </node>
+</launch>

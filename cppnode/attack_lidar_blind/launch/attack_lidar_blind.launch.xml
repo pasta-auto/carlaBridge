@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <arg name="settings_yaml" default="settings.yaml"/>
+
+  <node pkg="attack_lidar_blind" name="attack_lidar_blind" exec="attack_lidar_blind" respawn="false"  output="log">
+    <param from="$(find-pkg-share attack_lidar_blind)/config/$(var settings_yaml)"/>
+  </node>
+</launch>

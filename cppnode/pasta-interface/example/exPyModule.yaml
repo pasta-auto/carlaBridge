@@ -1,0 +1,4 @@
+name: "test"
+description: "This is a test module yaml for generating c++"
+type: "Test Module"
+moduleVersion: 0

@@ -1,0 +1,4 @@
+name: "Load data"
+description: "fills input with scikit coins data"
+type: "Test Module"
+moduleVersion: 0

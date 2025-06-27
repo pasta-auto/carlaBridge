@@ -1,0 +1,5 @@
+attack_lidar_blind:
+  ros__parameters:
+    input: "/attack/lidar_blind/input"
+    output: "/attack/sensing/lidar/top/outlier_filtered/pointcloud"
+    status: "/attack/lidar_blind/status"
